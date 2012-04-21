@@ -1,0 +1,22 @@
+#Github
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+
+#Mac
+.DS_Store
+
+#Custom, even tho Github disagrees
+node_modules/

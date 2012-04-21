@@ -1,0 +1,4 @@
+<% if ( format === 'html' ) { %><%- html %><% } %>
+<% if ( format === 'json' ) { %>
+{html: "<%- html.replace(/"/g, '\\"') %>"}
+<% } %>
