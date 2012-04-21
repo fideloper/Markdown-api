@@ -34,17 +34,11 @@ exports.post = function(req, res) {
 		return;
 	}
 
-
-	if(format !== 'json' && format !== 'html') {
-		exports.badRequest(req, res);
-		return;
-	}
-
 	//VALID REQUESTS
 	if(format === 'json') {
 		res.json({html:mk.toHTML(markdown)});
-	}
-	if(format === 'html') {
+	} else {
+		//Default to HTML if not json
 		res.send(mk.toHTML(markdown));
 	}
 	return;

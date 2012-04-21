@@ -38,9 +38,10 @@ app.get('/:any', routes.goHome);
 
 app.post('/', routes.badRequest);
 app.post('/markdown.:format', routes.post); //SOME MORE MAGIC
+app.post('/markdown', routes.post); //BECAUSE .html CONFLICTS WITH NGINX SERVING STATIC CONTENT
 app.post('/:any', routes.badRequest);
 
 
 
-app.listen(3000);
+app.listen(8124);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
