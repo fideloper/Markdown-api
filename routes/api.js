@@ -49,5 +49,5 @@ exports.badRequest = function(req, res) {
 }
 
 exports.goHome = function(req, res) {
-  res.redirect('http://apis.fideloper.com');
+  res.redirect('http://apis.fideloper.com/index.php');
 }
